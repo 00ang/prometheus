@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import About from "@/components/About";
 import Products from "@/components/Products";
+import Featured from "@/components/Featured";
 import Brands from "@/components/Brands";
 import Hours from "@/components/Hours";
 import Visit from "@/components/Visit";
@@ -19,6 +20,7 @@ export default function Home() {
         <Marquee />
         <About />
         <Products />
+        <Featured />
         <Brands />
         <Hours />
         <Visit />

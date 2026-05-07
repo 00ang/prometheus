@@ -13,20 +13,6 @@ const Icon = {
       <path d="M7 6c1 1 0 2 0 3M11 5c1 1 0 2 0 3" />
     </svg>
   ),
-  Liquid: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M9 3h6v3H9z" />
-      <path d="M8 6h8l-1 4h-6z" />
-      <path d="M7 10h10v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z" />
-      <path d="M11 14v4M13 14v4" />
-    </svg>
-  ),
-  Glass: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M9 3h6v4l3 5v9a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-9l3-5z" />
-      <path d="M6 14h12" />
-    </svg>
-  ),
   Cigar: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
       <rect x="2" y="10" width="18" height="4" rx="2" />
@@ -43,10 +29,16 @@ const Icon = {
       <path d="M16 14c2 0 4 1 4 3" />
     </svg>
   ),
-  Roll: (
+  Glass: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="9" width="18" height="6" rx="3" />
-      <path d="M7 9v6M11 9v6M15 9v6" />
+      <path d="M9 3h6v4l3 5v9a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-9l3-5z" />
+      <path d="M6 14h12" />
+    </svg>
+  ),
+  Leaf: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 19c8 0 14-6 14-14h-4c-8 0-12 4-12 12v2z" />
+      <path d="M5 19c2-4 5-7 9-9" />
     </svg>
   ),
   Snack: (
@@ -55,120 +47,80 @@ const Icon = {
       <path d="M9 13h6" />
     </svg>
   ),
-  Gift: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="8" width="18" height="13" rx="2" />
-      <path d="M3 12h18" />
-      <path d="M12 8v13" />
-      <path d="M8 8a2 2 0 1 1 0-4c2 0 4 4 4 4M16 8a2 2 0 1 0 0-4c-2 0-4 4-4 4" />
-    </svg>
-  ),
 };
 
 const categories: Category[] = [
   {
-    title: "Vapes & Disposables",
+    title: "Disposable Vapes & E-Liquids",
     blurb:
-      "A full wall of disposable devices and pod systems from the brands you trust.",
+      "Top brands of disposable vapes, pod systems, and box mods alongside an extensive selection of e-liquids in every flavor profile imaginable. Whether you’re transitioning from traditional tobacco or you’re an experienced vaper, our staff can help you find the perfect device and liquid.",
     items: [
-      "Disposable vapes",
-      "Pod systems",
-      "Mods & batteries",
-      "Coils & pods",
-      "Cartridge devices",
+      "Disposable vapes (2K to 40K puffs)",
+      "Pod systems & box mods",
+      "Freebase & salt nic e-liquid",
+      "Coils, pods & replacement parts",
     ],
     icon: Icon.Vape,
   },
   {
-    title: "E-Liquid & Salt Nic",
+    title: "Premium Tobacco & Cigars",
     blurb:
-      "Premium freebase and salt nic e-liquids in every flavor profile and strength.",
+      "Cigarettes, pipe tobacco, rolling tobacco, and premium cigars from renowned manufacturers. We maintain proper humidity for our cigar inventory and can help you select the perfect smoke for any occasion.",
     items: [
-      "Freebase e-liquid",
-      "Salt nic",
-      "Tobacco & menthol",
-      "Fruit, dessert & menthol",
-      "0mg / 3mg / 6mg / 35mg / 50mg",
-    ],
-    icon: Icon.Liquid,
-  },
-  {
-    title: "Glass & Smoking Pipes",
-    blurb:
-      "Hand-blown glass pipes, water pieces, and dab gear for every level of collector.",
-    items: [
-      "Glass pipes",
-      "Water pipes & bongs",
-      "Nectar collectors",
-      "Bowls & bangers",
-      "Cleaners & accessories",
-    ],
-    icon: Icon.Glass,
-  },
-  {
-    title: "Cigars & Cigarettes",
-    blurb:
-      "Fine cigars from boutique to brand-name and a complete cigarette wall.",
-    items: [
-      "Premium cigars",
-      "Machine-made cigars",
-      "Black & Milds",
-      "Cigarillos",
+      "Premium cigars (humidified)",
+      "Pipe & rolling tobacco",
       "Domestic & import cigarettes",
+      "Cigarillos, Black & Milds, Swishers",
     ],
     icon: Icon.Cigar,
   },
   {
-    title: "Hookah & Shisha",
+    title: "Hookah Products",
     blurb:
-      "Everything to set up at home — pipes, hoses, bowls, coals, and shisha tobacco.",
+      "Best Puff Tobacco is Kalamazoo’s hookah headquarters. We stock complete hookah setups, replacement parts, premium shisha tobacco in dozens of flavors, natural coals, and all the accessories you need for the perfect session.",
     items: [
-      "Hookah pipes",
-      "Shisha tobacco",
-      "Hoses, bowls & grommets",
-      "Charcoal & burners",
-      "Foil, tongs & cleaners",
+      "Complete hookah setups",
+      "Premium shisha — dozens of flavors",
+      "Natural & quick-light coals",
+      "Hoses, bowls, foil, tongs, grommets",
     ],
     icon: Icon.Hookah,
   },
   {
-    title: "RAW & Rolling Supplies",
+    title: "Smoking Glass & Accessories",
     blurb:
-      "Genuine RAW papers, cones, trays, tips, and the rolling tools to match.",
+      "Quality smoking glass including water pipes, hand pipes, bubblers, and dab rigs from trusted manufacturers. We also carry grinders, rolling papers, storage solutions, cleaning supplies, and every accessory a smoking enthusiast needs.",
     items: [
-      "RAW papers & cones",
-      "Tips & filters",
-      "Rolling trays",
-      "Grinders",
-      "Lighters & torches",
+      "Water pipes, bubblers & dab rigs",
+      "Hand pipes & nectar collectors",
+      "Grinders, lighters & torches",
+      "RAW papers, cones, trays & tips",
     ],
-    icon: Icon.Roll,
+    icon: Icon.Glass,
+  },
+  {
+    title: "Kratom",
+    blurb:
+      "A selection of premium kratom in various strains and forms including powder and capsules. Our staff can explain the differences between strains and help you find what works for your needs.",
+    items: [
+      "Powder & capsules",
+      "Multiple strains in stock",
+      "Trusted brands only",
+      "Staff guidance available",
+    ],
+    icon: Icon.Leaf,
   },
   {
     title: "Exotic Snacks & Drinks",
     blurb:
-      "Imports and limited drops you won&apos;t find at the grocery store down the street.",
+      "Looking for unique treats? Our exotic snacks section features hard-to-find beverages, candies, and snacks from around the world — the perfect complement to your smoke shop visit.",
     items: [
-      "Exotic sodas",
+      "Exotic sodas & energy drinks",
       "International chips & candy",
-      "Energy drinks",
       "Limited-edition releases",
       "Hot snacks & jerky",
     ],
     icon: Icon.Snack,
-  },
-  {
-    title: "Accessories & Gifts",
-    blurb:
-      "The little things that complete the setup — and make great last-minute gifts.",
-    items: [
-      "Lighters & Zippos",
-      "Ashtrays",
-      "Storage & stash gear",
-      "Apparel & novelties",
-      "Gift-ready bundles",
-    ],
-    icon: Icon.Gift,
   },
 ];
 
@@ -182,24 +134,21 @@ export default function Products() {
             One stop. <span className="text-ember-400">Every</span> aisle.
           </h2>
           <p className="mt-4 text-white/70 leading-relaxed">
-            We keep the entire shop stocked &mdash; from everyday essentials to the
-            harder-to-find pieces. If you don&apos;t see it, ask. We&apos;ll often special
-            order it.
+            Six departments, one neighborhood shop. From the latest disposables to
+            humidified premium cigars, hookah, glass, kratom, and exotic snacks —
+            we keep it all on the wall.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((c) => (
             <article key={c.title} className="card group">
               <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-ember-500/30 bg-ember-500/10 text-ember-300">
                 <span className="block h-6 w-6">{c.icon}</span>
               </div>
               <h3 className="heading text-2xl text-white">{c.title}</h3>
-              <p
-                className="mt-2 text-sm text-white/60 leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: c.blurb }}
-              />
-              <ul className="mt-4 space-y-1.5 text-sm text-white/70">
+              <p className="mt-2 text-sm text-white/65 leading-relaxed">{c.blurb}</p>
+              <ul className="mt-5 grid grid-cols-1 gap-1.5 text-sm text-white/70">
                 {c.items.map((it) => (
                   <li key={it} className="flex items-start gap-2">
                     <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ember-400/70" />
@@ -211,9 +160,32 @@ export default function Products() {
           ))}
         </div>
 
-        <p className="mt-8 text-xs uppercase tracking-widest text-white/40">
-          Selection rotates weekly &middot; Walk-in humidor &middot; In-stock pricing only
-        </p>
+        <div className="mt-12 grid gap-5 lg:grid-cols-2">
+          <div className="rounded-2xl border border-white/10 bg-ink-800/60 p-6 sm:p-8">
+            <span className="eyebrow">Quality Guaranteed</span>
+            <p className="mt-3 text-white/75 leading-relaxed">
+              Every product at Best Puff Tobacco is carefully selected for quality
+              and value. We stand behind what we sell and are always happy to
+              answer questions about our inventory.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-ember-500/30 bg-ember-500/[0.07] p-6 sm:p-8">
+            <span className="eyebrow">Visit Our Kalamazoo Store</span>
+            <p className="mt-3 text-white/75 leading-relaxed">
+              The best way to see our full selection is to visit us in person at
+              <span className="text-white"> 635 N 9th Street, Kalamazoo, MI 49009</span>.
+              Our staff is ready to help you find exactly what you&apos;re looking for.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <a href="#visit" className="btn-primary !py-2.5 !px-5">
+                Get Directions
+              </a>
+              <a href="tel:+12692548351" className="btn-ghost !py-2.5 !px-5">
+                Call (269) 254-8351
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
