@@ -13,14 +13,14 @@ const config: Config = {
           600: "#222734",
         },
         ember: {
-          50: "#fff7e6",
-          100: "#ffe8b3",
-          200: "#ffd57f",
-          300: "#ffc14d",
-          400: "#ffae1f",
-          500: "#f59e0b",
-          600: "#d97706",
-          700: "#b45309",
+          50: "#fff1f1",
+          100: "#ffd9d9",
+          200: "#ffb0b0",
+          300: "#ff7a7a",
+          400: "#ef4444",
+          500: "#dc2626",
+          600: "#b91c1c",
+          700: "#991b1b",
         },
       },
       fontFamily: {
@@ -28,11 +28,11 @@ const config: Config = {
         body: ["var(--font-body)", "system-ui", "sans-serif"],
       },
       boxShadow: {
-        glow: "0 0 0 1px rgba(245,158,11,0.3), 0 12px 40px -12px rgba(245,158,11,0.45)",
+        glow: "0 0 0 1px rgba(220,38,38,0.35), 0 12px 40px -12px rgba(220,38,38,0.55)",
       },
       backgroundImage: {
         "grid-fade":
-          "radial-gradient(circle at 50% 0%, rgba(245,158,11,0.18), transparent 60%), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px)",
+          "radial-gradient(circle at 50% 0%, rgba(220,38,38,0.22), transparent 60%), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px)",
       },
     },
   },

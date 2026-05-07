@@ -62,7 +62,7 @@ export default function Hours() {
                         {s.day}
                       </span>
                       {today && (
-                        <span className="rounded-full bg-ember-500 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-ink-950">
+                        <span className="rounded-full bg-ember-500 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-white">
                           Today
                         </span>
                       )}
