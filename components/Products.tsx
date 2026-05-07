@@ -151,10 +151,10 @@ export default function Products() {
           </p>
         </div>
 
-        <div className="mt-12 grid auto-rows-fr gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((c, i) => (
-            <Reveal key={c.title} delay={i * 70} className="h-full">
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-800/70 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-ember-500/40 hover:bg-ink-700/60 hover:shadow-glow">
+            <Reveal key={c.title} delay={i * 70}>
+              <article className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-800/70 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-ember-500/40 hover:bg-ink-700/60 hover:shadow-glow">
                 {c.image && (
                   <ProductImage src={c.image} alt={c.imageAlt ?? c.title} />
                 )}
