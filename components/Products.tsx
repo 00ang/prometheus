@@ -1,3 +1,5 @@
+import ProductImage from "@/components/ProductImage";
+
 type Category = {
   title: string;
   blurb: string;
@@ -155,17 +157,7 @@ export default function Products() {
               className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-800/70 backdrop-blur transition hover:border-ember-500/40 hover:bg-ink-700/60"
             >
               {c.image && (
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-ink-900">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={c.image}
-                    alt={c.imageAlt ?? c.title}
-                    loading="lazy"
-                    decoding="async"
-                    className="h-full w-full object-cover object-center transition duration-500 group-hover:scale-[1.03]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-ink-900/0 to-transparent" />
-                </div>
+                <ProductImage src={c.image} alt={c.imageAlt ?? c.title} />
               )}
               <div className="flex flex-1 flex-col p-6">
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-ember-500/30 bg-ember-500/10 text-ember-300">
