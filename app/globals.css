@@ -46,15 +46,28 @@ body {
   }
 
   .nav-link {
-    @apply text-sm font-medium uppercase tracking-wider text-white/80 transition hover:text-ember-300;
+    @apply relative text-sm font-medium uppercase tracking-wider text-white/80 transition hover:text-ember-300;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute -bottom-1 left-0 h-0.5 w-0 bg-ember-400 transition-[width] duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
   }
 
   .marquee {
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
   }
 
   .marquee-track {
     animation: marquee 30s linear infinite;
+  }
+
+  .marquee-track-fast {
+    animation: marquee 18s linear infinite;
   }
 
   @keyframes marquee {
@@ -64,6 +77,55 @@ body {
     to {
       transform: translateX(-50%);
     }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .shine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shine::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      100deg,
+      transparent 0%,
+      transparent 35%,
+      rgba(255, 255, 255, 0.18) 50%,
+      transparent 65%,
+      transparent 100%
+    );
+    transform: translateX(-100%);
+    animation: shimmer 2.6s ease-in-out infinite;
+    pointer-events: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
 

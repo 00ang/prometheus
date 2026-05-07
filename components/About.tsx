@@ -1,16 +1,18 @@
+import Reveal from "@/components/Reveal";
+
 export default function About() {
   return (
     <section id="about" className="py-20 sm:py-28">
       <div className="container-x grid gap-12 lg:grid-cols-12">
-        <div className="lg:col-span-5">
+        <Reveal className="lg:col-span-5">
           <span className="eyebrow">About the Shop</span>
           <h2 className="heading mt-4 text-4xl sm:text-5xl">
             Kalamazoo&apos;s neighborhood smoke shop &mdash; with the
             <span className="text-ember-400"> exotic </span>
             twist.
           </h2>
-        </div>
-        <div className="lg:col-span-7 space-y-5 text-white/75 leading-relaxed">
+        </Reveal>
+        <Reveal delay={120} className="lg:col-span-7 space-y-5 text-white/75 leading-relaxed">
           <p>
             Best Puff Tobacco &amp; Exotic Snacks is your local one-stop on N 9th Street,
             right next to Walmart. We stock the everyday essentials &mdash; cigarettes,
@@ -41,7 +43,7 @@ export default function About() {
               </li>
             ))}
           </ul>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

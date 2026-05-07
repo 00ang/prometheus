@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import TopDealsBar from "@/components/TopDealsBar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { formatPostDate, getAllPosts } from "@/lib/posts";
@@ -16,8 +17,9 @@ export default function BlogIndex() {
 
   return (
     <>
+      <TopDealsBar />
       <Navbar />
-      <main className="pt-28 pb-20 sm:pt-36">
+      <main className="pt-36 pb-20 sm:pt-44">
         <section className="container-x">
           <div className="max-w-2xl">
             <span className="eyebrow">Blog &amp; Newsletter</span>

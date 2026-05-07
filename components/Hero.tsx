@@ -2,18 +2,30 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-28"
+      className="relative overflow-hidden pt-36 pb-20 sm:pt-44 sm:pb-28"
     >
       <div className="absolute inset-0 -z-10 bg-grid-fade [background-size:100%_100%,40px_40px,40px_40px]" />
       <div className="absolute inset-x-0 top-0 -z-10 h-72 bg-gradient-to-b from-ember-500/10 via-transparent to-transparent" />
       <div className="absolute -top-32 left-1/2 -z-10 h-72 w-[60rem] -translate-x-1/2 rounded-full bg-ember-500/20 blur-[120px]" />
 
       <div className="container-x grid items-center gap-12 lg:grid-cols-12">
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-7 animate-fade-up">
           <span className="eyebrow">
-            <span className="h-1.5 w-1.5 rounded-full bg-ember-400" />
-            Kalamazoo, Michigan · 21+
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inset-0 animate-pulse-dot rounded-full bg-ember-400" />
+              <span className="relative h-2 w-2 rounded-full bg-ember-400" />
+            </span>
+            Open Now · Kalamazoo, MI · 21+
           </span>
+
+          <a
+            href="#products"
+            className="mt-5 inline-flex items-center gap-2 rounded-full bg-ember-500 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-white shadow-glow animate-pill-glow shine"
+          >
+            <span className="relative z-10">20% OFF Glass &amp; Kratom</span>
+            <span aria-hidden className="relative z-10">→</span>
+          </a>
+
           <h1 className="heading mt-5 text-5xl leading-[0.95] sm:text-6xl lg:text-7xl xl:text-8xl">
             All your smoke
             <br />
@@ -26,7 +38,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#products" className="btn-primary">
+            <a href="#products" className="btn-primary shine">
               Shop the Selection
             </a>
             <a href="#visit" className="btn-ghost">
@@ -50,8 +62,8 @@ export default function Hero() {
           </dl>
         </div>
 
-        <div className="lg:col-span-5">
-          <div className="relative mx-auto max-w-md">
+        <div className="lg:col-span-5 animate-fade-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
+          <div className="relative mx-auto max-w-md animate-float">
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-ember-500/30 via-transparent to-transparent blur-2xl" />
             <div className="relative rounded-[2rem] border border-white/10 bg-gradient-to-br from-ink-800 to-ink-900 p-1">
               <div className="rounded-[1.75rem] bg-ink-950 p-7">
@@ -77,7 +89,7 @@ export default function Hero() {
                   ].map((item) => (
                     <li
                       key={item.title}
-                      className="flex items-start gap-3 rounded-xl border border-white/5 bg-white/[0.02] p-3"
+                      className="flex items-start gap-3 rounded-xl border border-white/5 bg-white/[0.02] p-3 transition hover:border-ember-500/30 hover:bg-white/[0.05]"
                     >
                       <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-ember-400" />
                       <div>
@@ -99,7 +111,10 @@ export default function Hero() {
                       635 N 9th St, Suite E
                     </p>
                   </div>
-                  <a href="#visit" className="text-sm font-semibold text-ember-300 hover:text-ember-200">
+                  <a
+                    href="#visit"
+                    className="text-sm font-semibold text-ember-300 hover:text-ember-200"
+                  >
                     Visit →
                   </a>
                 </div>

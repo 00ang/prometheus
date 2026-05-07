@@ -1,4 +1,5 @@
 import ProductImage from "@/components/ProductImage";
+import Reveal from "@/components/Reveal";
 
 type Category = {
   title: string;
@@ -151,30 +152,29 @@ export default function Products() {
         </div>
 
         <div className="mt-12 grid auto-rows-fr gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {categories.map((c) => (
-            <article
-              key={c.title}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-800/70 backdrop-blur transition hover:border-ember-500/40 hover:bg-ink-700/60"
-            >
-              {c.image && (
-                <ProductImage src={c.image} alt={c.imageAlt ?? c.title} />
-              )}
-              <div className="flex flex-1 flex-col p-6">
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-ember-500/30 bg-ember-500/10 text-ember-300">
-                  <span className="block h-6 w-6">{c.icon}</span>
+          {categories.map((c, i) => (
+            <Reveal key={c.title} delay={i * 70} className="h-full">
+              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-800/70 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-ember-500/40 hover:bg-ink-700/60 hover:shadow-glow">
+                {c.image && (
+                  <ProductImage src={c.image} alt={c.imageAlt ?? c.title} />
+                )}
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-ember-500/30 bg-ember-500/10 text-ember-300 transition group-hover:scale-110 group-hover:border-ember-400">
+                    <span className="block h-6 w-6">{c.icon}</span>
+                  </div>
+                  <h3 className="heading text-2xl text-white">{c.title}</h3>
+                  <p className="mt-2 text-sm text-white/65 leading-relaxed">{c.blurb}</p>
+                  <ul className="mt-5 grid grid-cols-1 gap-1.5 text-sm text-white/70">
+                    {c.items.map((it) => (
+                      <li key={it} className="flex items-start gap-2">
+                        <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ember-400/70" />
+                        <span>{it}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <h3 className="heading text-2xl text-white">{c.title}</h3>
-                <p className="mt-2 text-sm text-white/65 leading-relaxed">{c.blurb}</p>
-                <ul className="mt-5 grid grid-cols-1 gap-1.5 text-sm text-white/70">
-                  {c.items.map((it) => (
-                    <li key={it} className="flex items-start gap-2">
-                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ember-400/70" />
-                      <span>{it}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </article>
+              </article>
+            </Reveal>
           ))}
         </div>
 

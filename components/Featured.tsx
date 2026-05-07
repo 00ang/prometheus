@@ -1,3 +1,5 @@
+import Reveal from "@/components/Reveal";
+
 type Device = {
   name: string;
   tagline?: string;
@@ -139,39 +141,38 @@ export default function Featured() {
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {devices.map((d) => (
-            <article
-              key={d.name}
-              className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-ink-800/80 to-ink-900/80 p-6 transition hover:border-ember-500/40"
-            >
-              <div className="absolute -top-12 -right-12 h-32 w-32 rounded-full bg-ember-500/10 blur-2xl" />
-              <div className="relative">
-                <div className="flex items-start justify-between gap-3">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-ember-500/30 bg-ember-500/10 text-ember-300">
-                    <span className="block h-6 w-6">{DeviceIcon}</span>
+          {devices.map((d, i) => (
+            <Reveal key={d.name} delay={i * 60} className="h-full">
+              <article className="group relative h-full overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-ink-800/80 to-ink-900/80 p-6 transition duration-300 hover:-translate-y-1 hover:border-ember-500/40 hover:shadow-glow">
+                <div className="absolute -top-12 -right-12 h-32 w-32 rounded-full bg-ember-500/10 blur-2xl transition group-hover:bg-ember-500/25" />
+                <div className="relative">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-ember-500/30 bg-ember-500/10 text-ember-300 transition group-hover:scale-110 group-hover:border-ember-400">
+                      <span className="block h-6 w-6">{DeviceIcon}</span>
+                    </div>
+                    {d.highlight && (
+                      <span className="rounded-full border border-ember-500/40 bg-ember-500/10 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-ember-200">
+                        {d.highlight}
+                      </span>
+                    )}
                   </div>
-                  {d.highlight && (
-                    <span className="rounded-full border border-ember-500/40 bg-ember-500/10 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-ember-200">
-                      {d.highlight}
-                    </span>
+
+                  <h3 className="heading mt-5 text-2xl text-white">{d.name}</h3>
+                  {d.tagline && (
+                    <p className="mt-1 text-sm text-white/55">{d.tagline}</p>
                   )}
+
+                  <ul className="mt-4 space-y-1.5 text-sm text-white/75">
+                    {d.specs.map((s) => (
+                      <li key={s} className="flex items-start gap-2">
+                        <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ember-400/70" />
+                        <span>{s}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-
-                <h3 className="heading mt-5 text-2xl text-white">{d.name}</h3>
-                {d.tagline && (
-                  <p className="mt-1 text-sm text-white/55">{d.tagline}</p>
-                )}
-
-                <ul className="mt-4 space-y-1.5 text-sm text-white/75">
-                  {d.specs.map((s) => (
-                    <li key={s} className="flex items-start gap-2">
-                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ember-400/70" />
-                      <span>{s}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </article>
+              </article>
+            </Reveal>
           ))}
         </div>
 

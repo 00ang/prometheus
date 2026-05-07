@@ -34,6 +34,46 @@ const config: Config = {
         "grid-fade":
           "radial-gradient(circle at 50% 0%, rgba(220,38,38,0.22), transparent 60%), linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px)",
       },
+      keyframes: {
+        fadeUp: {
+          from: { opacity: "0", transform: "translateY(24px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        float: {
+          "0%,100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
+        pulseDot: {
+          "0%,100%": { opacity: "1", transform: "scale(1)" },
+          "50%": { opacity: "0.45", transform: "scale(1.6)" },
+        },
+        shimmer: {
+          "0%": { transform: "translateX(-150%) skewX(-20deg)" },
+          "100%": { transform: "translateX(250%) skewX(-20deg)" },
+        },
+        pillGlow: {
+          "0%,100%": {
+            boxShadow:
+              "0 0 0 0 rgba(220,38,38,0.55), 0 8px 24px -8px rgba(220,38,38,0.55)",
+          },
+          "50%": {
+            boxShadow:
+              "0 0 0 10px rgba(220,38,38,0), 0 12px 40px -8px rgba(220,38,38,0.7)",
+          },
+        },
+      },
+      animation: {
+        "fade-up": "fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        "fade-in": "fadeIn 0.6s ease-out forwards",
+        float: "float 5s ease-in-out infinite",
+        "pulse-dot": "pulseDot 1.6s ease-in-out infinite",
+        shimmer: "shimmer 2.4s ease-in-out infinite",
+        "pill-glow": "pillGlow 2.4s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import TopDealsBar from "@/components/TopDealsBar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PostBody from "@/components/PostBody";
@@ -35,8 +36,9 @@ export default function PostPage({ params }: Params) {
 
   return (
     <>
+      <TopDealsBar />
       <Navbar />
-      <main className="pt-28 pb-20 sm:pt-36">
+      <main className="pt-36 pb-20 sm:pt-44">
         <article className="container-x">
           <div className="mx-auto max-w-3xl">
             <Link

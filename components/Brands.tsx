@@ -55,7 +55,7 @@ export default function Brands() {
           {brands.map((b) => (
             <li
               key={b}
-              className="rounded-xl border border-white/10 bg-ink-800/60 px-4 py-4 text-center text-sm font-semibold uppercase tracking-wider text-white/80 transition hover:border-ember-500/40 hover:text-ember-200"
+              className="rounded-xl border border-white/10 bg-ink-800/60 px-4 py-4 text-center text-sm font-semibold uppercase tracking-wider text-white/80 transition duration-300 hover:-translate-y-0.5 hover:border-ember-500/40 hover:bg-ink-700/60 hover:text-ember-200"
             >
               {b}
             </li>
