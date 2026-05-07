@@ -3,6 +3,8 @@ type Category = {
   blurb: string;
   items: string[];
   icon: React.ReactNode;
+  image?: string;
+  imageAlt?: string;
 };
 
 const Icon = {
@@ -61,6 +63,8 @@ const categories: Category[] = [
       "Coils, pods & replacement parts",
     ],
     icon: Icon.Vape,
+    image: "/images/pods-coils.jpg",
+    imageAlt: "Pods, coils, and replacement parts in stock at Best Puff Tobacco",
   },
   {
     title: "Premium Tobacco & Cigars",
@@ -85,6 +89,8 @@ const categories: Category[] = [
       "Hoses, bowls, foil, tongs, grommets",
     ],
     icon: Icon.Hookah,
+    image: "/images/hookah.jpg",
+    imageAlt: "Hookah display at Best Puff Tobacco in Kalamazoo",
   },
   {
     title: "Smoking Glass & Accessories",
@@ -97,6 +103,8 @@ const categories: Category[] = [
       "RAW papers, cones, trays & tips",
     ],
     icon: Icon.Glass,
+    image: "/images/accessories.jpg",
+    imageAlt: "Smoking accessories — grinder, ashtray, lighter sleeve, and rolling tray",
   },
   {
     title: "Kratom",
@@ -140,22 +148,40 @@ export default function Products() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid auto-rows-fr gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((c) => (
-            <article key={c.title} className="card group">
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-ember-500/30 bg-ember-500/10 text-ember-300">
-                <span className="block h-6 w-6">{c.icon}</span>
+            <article
+              key={c.title}
+              className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-800/70 backdrop-blur transition hover:border-ember-500/40 hover:bg-ink-700/60"
+            >
+              {c.image && (
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-ink-900">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={c.image}
+                    alt={c.imageAlt ?? c.title}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-ink-900/0 to-transparent" />
+                </div>
+              )}
+              <div className="flex flex-1 flex-col p-6">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-ember-500/30 bg-ember-500/10 text-ember-300">
+                  <span className="block h-6 w-6">{c.icon}</span>
+                </div>
+                <h3 className="heading text-2xl text-white">{c.title}</h3>
+                <p className="mt-2 text-sm text-white/65 leading-relaxed">{c.blurb}</p>
+                <ul className="mt-5 grid grid-cols-1 gap-1.5 text-sm text-white/70">
+                  {c.items.map((it) => (
+                    <li key={it} className="flex items-start gap-2">
+                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ember-400/70" />
+                      <span>{it}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <h3 className="heading text-2xl text-white">{c.title}</h3>
-              <p className="mt-2 text-sm text-white/65 leading-relaxed">{c.blurb}</p>
-              <ul className="mt-5 grid grid-cols-1 gap-1.5 text-sm text-white/70">
-                {c.items.map((it) => (
-                  <li key={it} className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ember-400/70" />
-                    <span>{it}</span>
-                  </li>
-                ))}
-              </ul>
             </article>
           ))}
         </div>
