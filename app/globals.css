@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Bebas Neue", "Anton", "Oswald", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #06070a;
+  color: #f5f5f4;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .heading {
+    font-family: var(--font-display);
+    letter-spacing: 0.01em;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-ember-500 px-6 py-3 text-sm font-semibold uppercase tracking-wider text-ink-950 transition hover:bg-ember-400 hover:shadow-glow focus:outline-none focus:ring-2 focus:ring-ember-400/60;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition hover:border-white/40 hover:bg-white/10;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-ember-300;
+  }
+
+  .card {
+    @apply rounded-2xl border border-white/10 bg-ink-800/70 p-6 backdrop-blur transition hover:border-ember-500/40 hover:bg-ink-700/60;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium uppercase tracking-wider text-white/80 transition hover:text-ember-300;
+  }
+
+  .marquee {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+
+  .marquee-track {
+    animation: marquee 30s linear infinite;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+::selection {
+  background: #f59e0b;
+  color: #06070a;
+}
