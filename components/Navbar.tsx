@@ -1,15 +1,16 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const links = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#products", label: "Products" },
-  { href: "#featured", label: "Devices" },
-  { href: "#brands", label: "Brands" },
-  { href: "#hours", label: "Hours" },
-  { href: "#visit", label: "Visit" },
+  { href: "/#about", label: "About" },
+  { href: "/#products", label: "Products" },
+  { href: "/#featured", label: "Devices" },
+  { href: "/#brands", label: "Brands" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#hours", label: "Hours" },
+  { href: "/#visit", label: "Visit" },
 ];
 
 export default function Navbar() {
@@ -32,20 +33,20 @@ export default function Navbar() {
       }`}
     >
       <div className="container-x flex h-16 items-center justify-between">
-        <a href="#home" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <span className="flex h-9 w-9 items-center justify-center rounded-full border border-ember-500/40 bg-ember-500/10 text-ember-300 heading text-lg">
             BP
           </span>
           <span className="heading text-xl tracking-wide text-white">
             Best Puff <span className="text-ember-400">Tobacco</span>
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-7 md:flex">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="nav-link">
+            <Link key={l.href} href={l.href} className="nav-link">
               {l.label}
-            </a>
+            </Link>
           ))}
           <a href="tel:+12692548351" className="btn-primary !py-2 !px-4 !text-xs">
             (269) 254-8351
@@ -78,14 +79,14 @@ export default function Navbar() {
         <div className="md:hidden border-t border-white/10 bg-ink-950/95 backdrop-blur">
           <div className="container-x py-4 flex flex-col gap-3">
             {links.map((l) => (
-              <a
+              <Link
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
                 className="nav-link py-2"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
             <a
               href="tel:+12692548351"

@@ -50,27 +50,32 @@ export default function Footer() {
             <h4 className="heading text-xl text-white">Sections</h4>
             <ul className="mt-3 space-y-1 text-sm text-white/70">
               <li>
-                <a href="#about" className="hover:text-ember-300">
+                <a href="/#about" className="hover:text-ember-300">
                   About
                 </a>
               </li>
               <li>
-                <a href="#products" className="hover:text-ember-300">
+                <a href="/#products" className="hover:text-ember-300">
                   Products
                 </a>
               </li>
               <li>
-                <a href="#brands" className="hover:text-ember-300">
+                <a href="/#brands" className="hover:text-ember-300">
                   Brands
                 </a>
               </li>
               <li>
-                <a href="#hours" className="hover:text-ember-300">
+                <a href="/blog" className="hover:text-ember-300">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a href="/#hours" className="hover:text-ember-300">
                   Hours
                 </a>
               </li>
               <li>
-                <a href="#visit" className="hover:text-ember-300">
+                <a href="/#visit" className="hover:text-ember-300">
                   Visit
                 </a>
               </li>
