@@ -7,6 +7,7 @@ import Deals from "@/components/Deals";
 import About from "@/components/About";
 import Products from "@/components/Products";
 import Featured from "@/components/Featured";
+import StundenglassShowcase from "@/components/StundenglassShowcase";
 import Reviews from "@/components/Reviews";
 import Brands from "@/components/Brands";
 import BlogPreview from "@/components/BlogPreview";
@@ -27,6 +28,7 @@ export default function Home() {
         <About />
         <Products />
         <Featured />
+        <StundenglassShowcase />
         <Reviews />
         <Brands />
         <BlogPreview />

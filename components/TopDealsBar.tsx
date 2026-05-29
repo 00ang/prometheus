@@ -1,5 +1,6 @@
 const deals = [
   { tag: "DEAL", text: "20% OFF ALL GLASS" },
+  { tag: "IN STOCK", text: "STÜNDENGLASS GRAVITY HOOKAH — $599" },
   { tag: "DEAL", text: "BUY 2 VAPES, GET $3 OFF" },
   { tag: "EVERY DAY", text: "LOWEST PRICES IN TOWN" },
   { tag: "OPEN LATE", text: "FRI & SAT TIL 11 PM" },
