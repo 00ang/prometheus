@@ -104,18 +104,6 @@ const categories: Category[] = [
     imageAlt: "Smoking accessories — grinder, ashtray, lighter sleeve, and rolling tray",
   },
   {
-    title: "Kratom",
-    blurb:
-      "A selection of premium kratom in various strains and forms including powder and capsules. Our staff can explain the differences between strains and help you find what works for your needs.",
-    items: [
-      "Powder & capsules",
-      "Multiple strains in stock",
-      "Trusted brands only",
-      "Staff guidance available",
-    ],
-    icon: Icon.Leaf,
-  },
-  {
     title: "Exotic Snacks & Drinks",
     blurb:
       "Looking for unique treats? Our exotic snacks section features hard-to-find beverages, candies, and snacks from around the world — the perfect complement to your smoke shop visit.",

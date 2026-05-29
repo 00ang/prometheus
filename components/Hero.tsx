@@ -22,7 +22,7 @@ export default function Hero() {
             href="#products"
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-ember-500 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-white shadow-glow animate-pill-glow shine"
           >
-            <span className="relative z-10">20% OFF Glass &amp; Kratom</span>
+            <span className="relative z-10">20% OFF All Glass</span>
             <span aria-hidden className="relative z-10">→</span>
           </a>
 
