@@ -40,12 +40,6 @@ const Icon = {
       <path d="M6 14h12" />
     </svg>
   ),
-  Leaf: (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 19c8 0 14-6 14-14h-4c-8 0-12 4-12 12v2z" />
-      <path d="M5 19c2-4 5-7 9-9" />
-    </svg>
-  ),
   Snack: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
       <path d="M5 8c2-3 12-3 14 0l-2 11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z" />
@@ -145,9 +139,9 @@ export default function Products() {
             One stop. <span className="text-ember-400">Every</span> aisle.
           </h2>
           <p className="mt-4 text-white/70 leading-relaxed">
-            Six departments, one neighborhood shop. From the latest disposables to
-            humidified premium cigars, hookah, glass, kratom, and exotic snacks —
-            we keep it all on the wall.
+            Five departments, one neighborhood shop. From the latest disposables to
+            humidified premium cigars, hookah, glass, and exotic snacks — we keep
+            it all on the wall.
           </p>
         </div>
 

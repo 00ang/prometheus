@@ -13,7 +13,7 @@ const deals: Deal[] = [
   {
     badge: "Storewide",
     headline: "20% OFF",
-    detail: "All glass & kratom",
+    detail: "All glass & smoking accessories",
     fine: "Walk-in only · while supplies last",
     href: "#products",
     cta: "See selection",
