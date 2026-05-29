@@ -82,7 +82,7 @@ export default function StundenglassShowcase() {
                 {!imgFailed ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
-                    src="/images/stundenglass.jpg"
+                    src="/images/IMG_5202.webp"
                     alt="Stündenglass gravity hookah in stock at Best Puff Tobacco"
                     onError={() => setImgFailed(true)}
                     loading="lazy"
