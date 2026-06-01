@@ -67,8 +67,25 @@ export default function Visit() {
           </div>
         </div>
 
-        <div className="lg:col-span-7">
-          <div className="overflow-hidden rounded-3xl border border-white/10 bg-ink-800 aspect-[4/3] sm:aspect-[16/10]">
+        <div className="lg:col-span-7 space-y-5">
+          <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-ink-800 aspect-[16/9]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/hero.png"
+              alt="Best Puff Tobacco storefront on N 9th Street in Kalamazoo, MI"
+              loading="lazy"
+              decoding="async"
+              className="h-full w-full object-cover object-center transition duration-700 group-hover:scale-[1.02]"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-950/70 via-transparent to-transparent" />
+            <div className="absolute left-4 bottom-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-ink-950/70 px-3 py-1.5 backdrop-blur">
+              <span className="h-1.5 w-1.5 rounded-full bg-ember-400 animate-pulse-dot" />
+              <span className="text-[10px] font-bold uppercase tracking-widest text-white">
+                Storefront · 635 N 9th St
+              </span>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-ink-800 aspect-[16/10]">
             <iframe
               title="Best Puff Tobacco location map"
               src={mapEmbed}
@@ -77,7 +94,7 @@ export default function Visit() {
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
-          <p className="mt-3 text-xs uppercase tracking-widest text-white/40">
+          <p className="text-xs uppercase tracking-widest text-white/40">
             Map &middot; 635 N 9th St Suite E, Kalamazoo, MI 49009
           </p>
         </div>

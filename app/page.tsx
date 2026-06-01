@@ -10,6 +10,7 @@ import Featured from "@/components/Featured";
 import StundenglassShowcase from "@/components/StundenglassShowcase";
 import Reviews from "@/components/Reviews";
 import Brands from "@/components/Brands";
+import Gallery from "@/components/Gallery";
 import BlogPreview from "@/components/BlogPreview";
 import Hours from "@/components/Hours";
 import Visit from "@/components/Visit";
@@ -31,6 +32,7 @@ export default function Home() {
         <StundenglassShowcase />
         <Reviews />
         <Brands />
+        <Gallery />
         <BlogPreview />
         <Hours />
         <Visit />

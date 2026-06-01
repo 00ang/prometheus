@@ -60,8 +60,8 @@ const categories: Category[] = [
       "Coils, pods & replacement parts",
     ],
     icon: Icon.Vape,
-    image: "/images/pods-coils.jpg",
-    imageAlt: "Pods, coils, and replacement parts in stock at Best Puff Tobacco",
+    image: "/images/vapes.png",
+    imageAlt: "Disposable vapes and pod systems wall at Best Puff Tobacco",
   },
   {
     title: "Premium Tobacco & Cigars",
@@ -74,6 +74,8 @@ const categories: Category[] = [
       "Cigarillos, Black & Milds, Swishers",
     ],
     icon: Icon.Cigar,
+    image: "/images/humidor.png",
+    imageAlt: "Walk-in humidor at Best Puff Tobacco in Kalamazoo",
   },
   {
     title: "Hookah Products",
@@ -100,8 +102,8 @@ const categories: Category[] = [
       "RAW papers, cones, trays & tips",
     ],
     icon: Icon.Glass,
-    image: "/images/accessories.jpg",
-    imageAlt: "Smoking accessories — grinder, ashtray, lighter sleeve, and rolling tray",
+    image: "/images/glass-wall.png",
+    imageAlt: "Glass pipes and water pipes wall at Best Puff Tobacco",
   },
   {
     title: "Exotic Snacks & Drinks",
@@ -114,6 +116,8 @@ const categories: Category[] = [
       "Hot snacks & jerky",
     ],
     icon: Icon.Snack,
+    image: "/images/snacks-1.png",
+    imageAlt: "Exotic snacks and candy display at Best Puff Tobacco",
   },
 ];
 
