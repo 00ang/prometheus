@@ -18,6 +18,109 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "hyppe-infiniti-50k-12-99",
+    title:
+      "Product of the Week: Hyppe Infiniti 50K Disposable Vape — Just $12.99 in Kalamazoo",
+    dek: "The Hyppe Infiniti 50K is our Product of the Week at Best Puff Tobacco off 9th Street in Kalamazoo, MI — a 50,000-puff disposable at just $12.99, less than half the typical price of a 50K device.",
+    date: "2026-02-15",
+    category: "Product of the Week",
+    readMinutes: 4,
+    excerpt:
+      "The Hyppe Infiniti 50K disposable vape is only $12.99 at Best Puff Tobacco this week — an aggressively low price for a 50,000-puff device. Rechargeable, pre-filled, and built to last, it’s one of the best per-puff values in the shop.",
+    body: [
+      {
+        type: "p",
+        text: "If you’re looking for a Hyppe Infiniti 50K disposable vape in Kalamazoo, this week is the time to stop by Best Puff Tobacco. For a limited time, the Hyppe Infiniti 50K is just $12.99 at our tobacco and vape shop off 9th Street in Kalamazoo, MI — one of the lowest prices you’ll find anywhere on a 50,000-puff device.",
+      },
+      {
+        type: "p",
+        text: "We proudly serve customers from Kalamazoo, Portage, Oshtemo, Texas Township, Paw Paw, Gobles, Vicksburg, and surrounding Southwest Michigan areas looking for high-quality disposable vapes at prices that actually make sense.",
+      },
+      { type: "h2", text: "What is the Hyppe Infiniti 50K?" },
+      {
+        type: "p",
+        text: "The Hyppe Infiniti 50K is a high-capacity disposable vape from Hyppe — a brand vapers already know from the Hyppe Bar and Hyppe Max Flow lineup. As the name suggests, it’s rated for up to 50,000 puffs per device, putting it in the same tier as the Geek Bar Pulse X, Raz TN9000, and Foger Bit 35K.",
+      },
+      {
+        type: "p",
+        text: "Where it stands apart at Best Puff Tobacco is the price. At $12.99, the Hyppe Infiniti 50K is less than half what a comparable 50K device typically costs — a genuinely unbeatable per-puff value while supplies last.",
+      },
+      { type: "h3", text: "Hyppe Infiniti 50K features" },
+      {
+        type: "ul",
+        items: [
+          "Up to 50,000 puffs per device",
+          "Pre-filled e-liquid — no refilling or coil changes",
+          "Rechargeable via USB Type-C",
+          "Adjustable airflow for a customizable draw",
+          "Auto-draw activation — no buttons",
+          "Compact, pocket-friendly design",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you’ve been searching for a Hyppe Infiniti 50K near me at a reasonable price, this is about as good as it gets in Southwest Michigan.",
+      },
+      { type: "h2", text: "Hyppe Infiniti 50K flavors" },
+      {
+        type: "p",
+        text: "Hyppe is known for clean, well-mixed flavor profiles, and the Infiniti 50K carries that reputation forward. Flavor availability may vary week to week, but popular options include:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Blue Razz Ice",
+          "Watermelon Ice",
+          "Strawberry Kiwi",
+          "Peach Mango",
+          "Miami Mint",
+          "Tropical fruit and candy-style blends",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Limited-time deal",
+        text: "The Hyppe Infiniti 50K is $12.99 while supplies last — one of our most aggressive vape deals of the year. Stop in to see which flavors are still on the shelf today.",
+      },
+      { type: "h2", text: "Why buy the Hyppe Infiniti 50K at Best Puff Tobacco?" },
+      {
+        type: "p",
+        text: "Best Puff Tobacco is a locally owned tobacco and vape shop in Kalamazoo, MI, trusted by customers searching for:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Hyppe Infiniti 50K Kalamazoo",
+          "Hyppe Infiniti 50K $12.99 near me",
+          "Cheap 50K disposable vape Portage MI",
+          "Vape shop near Oshtemo and Texas Township",
+          "Smoke shop near 9th Street Kalamazoo",
+        ],
+      },
+      {
+        type: "p",
+        text: "Our staff can help you compare the Hyppe Infiniti 50K with other big-puff devices like the Geek Bar Pulse X, Raz TN9000, and Foger Bit 35K so you can decide which one fits your style.",
+      },
+      {
+        type: "h2",
+        text: "Buy the Hyppe Infiniti 50K near Kalamazoo — limited-time $12.99 deal",
+      },
+      {
+        type: "p",
+        text: "Whether you’re coming from Kalamazoo Township, Westwood, Eastwood, Parchment, Paw Paw, Gobles, or Vicksburg, Best Puff Tobacco makes it easy to grab a 50K disposable vape near you without paying premium-shelf pricing.",
+      },
+      {
+        type: "p",
+        text: "At $12.99, the Hyppe Infiniti 50K is the easiest recommendation we can make this week — a full 50,000-puff device for the price of a small snack run.",
+      },
+      {
+        type: "callout",
+        title: "📍 Serving Southwest Michigan",
+        text: "Best Puff Tobacco is located off 9th Street in Kalamazoo, MI, proudly serving customers from Portage, Oshtemo, Texas Township, Paw Paw, Gobles, Vicksburg, Westwood, Eastwood, Parchment, and nearby ZIP codes including 49006, 49009, 49024, 49048, and 49005.",
+      },
+    ],
+  },
+  {
     slug: "dojo-sphere-30-percent-off",
     title:
       "Product of the Week: DOJO SPHERE Disposable Vape — 30% OFF in Kalamazoo",

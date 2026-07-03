@@ -28,10 +28,10 @@ const deals: Deal[] = [
   },
   {
     badge: "Product of the Week",
-    headline: "30% OFF",
-    detail: "DOJO Sphere disposables",
+    headline: "$12.99",
+    detail: "Hyppe Infiniti 50K disposables",
     fine: "Limited time · while supplies last",
-    href: "/blog/dojo-sphere-30-percent-off",
+    href: "/blog/hyppe-infiniti-50k-12-99",
     cta: "Read the post",
   },
 ];
