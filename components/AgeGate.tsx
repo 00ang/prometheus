@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Logo from "@/components/Logo";
 
 const STORAGE_KEY = "bpt_age_verified_v1";
 
@@ -39,6 +40,7 @@ export default function AgeGate() {
       className="fixed inset-0 z-[100] flex items-center justify-center bg-ink-950/95 px-4 backdrop-blur"
     >
       <div className="w-full max-w-lg rounded-3xl border border-white/10 bg-gradient-to-b from-ink-800 to-ink-900 p-8 text-center shadow-glow">
+        <Logo className="mx-auto mb-5 h-10 w-auto opacity-95" />
         <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-ember-500/30 bg-ember-500/10 text-ember-400">
           <span className="heading text-2xl">21+</span>
         </div>

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Logo from "@/components/Logo";
 
 const links = [
   { href: "/#about", label: "About" },
@@ -33,13 +34,8 @@ export default function Navbar() {
       }`}
     >
       <div className="container-x flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-ember-500/40 bg-ember-500/10 text-ember-300 heading text-lg">
-            BP
-          </span>
-          <span className="heading text-xl tracking-wide text-white">
-            Best Puff <span className="text-ember-400">Tobacco</span>
-          </span>
+        <Link href="/" className="flex items-center gap-3" aria-label="Best Puff Tobacco — home">
+          <Logo className="h-9 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">

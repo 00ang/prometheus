@@ -1,3 +1,5 @@
+import Logo from "@/components/Logo";
+
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -6,12 +8,7 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full border border-ember-500/40 bg-ember-500/10 text-ember-300 heading text-lg">
-                BP
-              </span>
-              <span className="heading text-2xl tracking-wide text-white">
-                Best Puff <span className="text-ember-400">Tobacco</span>
-              </span>
+              <Logo className="h-10 w-auto" />
             </div>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-white/60">
               Kalamazoo&apos;s neighborhood smoke shop &mdash; vapes, e-liquid, glass,
