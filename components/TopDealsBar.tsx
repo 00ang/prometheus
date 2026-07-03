@@ -3,7 +3,7 @@ const deals = [
   { tag: "IN STOCK", text: "STÜNDENGLASS GRAVITY HOOKAH — $599" },
   { tag: "DEAL", text: "BUY 2 VAPES, GET $3 OFF" },
   { tag: "EVERY DAY", text: "LOWEST PRICES IN TOWN" },
-  { tag: "OPEN LATE", text: "FRI & SAT TIL 11 PM" },
+  { tag: "OPEN DAILY", text: "9 AM – 10 PM · 7 DAYS A WEEK" },
   { tag: "FIND US", text: "635 N 9TH ST · NEXT TO WALMART" },
 ];
 

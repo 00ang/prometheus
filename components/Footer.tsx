@@ -40,9 +40,8 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h4 className="heading text-xl text-white">Hours</h4>
             <ul className="mt-3 space-y-1 text-sm text-white/70">
-              <li>Mon–Thu &nbsp;9a – 10p</li>
-              <li>Fri–Sat &nbsp;9a – 11p</li>
-              <li>Sun &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9a – 10p</li>
+              <li>Open Daily</li>
+              <li>9 AM – 10 PM</li>
             </ul>
           </div>
 

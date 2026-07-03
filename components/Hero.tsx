@@ -53,7 +53,7 @@ export default function Hero() {
             </div>
             <div>
               <dt className="text-xs uppercase tracking-widest text-white/40">Until</dt>
-              <dd className="heading text-2xl text-white">11 PM</dd>
+              <dd className="heading text-2xl text-white">10 PM</dd>
             </div>
             <div>
               <dt className="text-xs uppercase tracking-widest text-white/40">Prices</dt>
