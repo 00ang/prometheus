@@ -95,6 +95,22 @@ const devices: Device[] = [
     imageAlt: "Geek Bar Clio Platinum 50K disposable vape at Best Puff Tobacco",
   },
   {
+    name: "Geek Bar Mate 60K Kit",
+    tagline: "Modular pod system · VPU chip",
+    highlight: "Up to 60,000 puffs",
+    specs: [
+      "15 mL pre-filled transparent pod",
+      "5% (50 mg) salt nic · 12 flavors",
+      "Reusable 900 mAh battery + 200 mAh pod",
+      "Regular 60K · Pulse ≈ 30K",
+      "VPU chip + dual mesh coil",
+      "Adjustable airflow · Type-C fast charge",
+      "0 → 80% in ~20 minutes",
+    ],
+    image: "/images/mate-60k.png",
+    imageAlt: "Geek Bar Mate 60K Kit disposable vape at Best Puff Tobacco",
+  },
+  {
     name: "Foger Bit 35000",
     tagline: "Slim profile, big numbers",
     highlight: "Up to 35,000 puffs",
