@@ -76,6 +76,20 @@ const devices: Device[] = [
     ],
   },
   {
+    name: "Geek Bar Clio Platinum",
+    tagline: "Dual screen · 3 modes · flagship 50K",
+    highlight: "Up to 50,000 puffs",
+    specs: [
+      "16 mL pre-filled e-liquid",
+      "5% (50 mg) salt nic",
+      "Dual mesh coils",
+      "Regular 50K · Pulse 25K · Super Pulse 20K",
+      "Dual screen display (battery + liquid)",
+      "0 → 80% in ~30 min fast charge",
+      "Type-C · draw-activated",
+    ],
+  },
+  {
     name: "Foger Bit 35000",
     tagline: "Slim profile, big numbers",
     highlight: "Up to 35,000 puffs",
