@@ -14,6 +14,8 @@ export type Post = {
   readMinutes: number;
   excerpt: string;
   body: Block[];
+  image?: string;
+  imageAlt?: string;
 };
 
 export const posts: Post[] = [
@@ -27,6 +29,8 @@ export const posts: Post[] = [
     readMinutes: 4,
     excerpt:
       "The Hyppe Infiniti 50K disposable vape is only $12.99 at Best Puff Tobacco this week — an aggressively low price for a 50,000-puff device. Rechargeable, pre-filled, and built to last, it’s one of the best per-puff values in the shop.",
+    image: "/images/hyppe.png",
+    imageAlt: "Hyppe Infiniti 50K disposable vape at Best Puff Tobacco",
     body: [
       {
         type: "p",

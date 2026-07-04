@@ -5,6 +5,7 @@ import TopDealsBar from "@/components/TopDealsBar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PostBody from "@/components/PostBody";
+import ProductImage from "@/components/ProductImage";
 import { formatPostDate, getAllPosts, getPost } from "@/lib/posts";
 
 type Params = { params: { slug: string } };
@@ -64,6 +65,12 @@ export default function PostPage({ params }: Params) {
             <p className="mt-5 text-lg leading-relaxed text-white/70 sm:text-xl">
               {post.dek}
             </p>
+
+            {post.image && (
+              <div className="mt-10 overflow-hidden rounded-3xl border border-white/10">
+                <ProductImage src={post.image} alt={post.imageAlt ?? post.title} />
+              </div>
+            )}
 
             <hr className="my-10 border-white/10" />
 

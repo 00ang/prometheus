@@ -1,3 +1,4 @@
+import ProductImage from "@/components/ProductImage";
 import Reveal from "@/components/Reveal";
 
 type Device = {
@@ -5,6 +6,8 @@ type Device = {
   tagline?: string;
   specs: string[];
   highlight?: string;
+  image?: string;
+  imageAlt?: string;
 };
 
 const devices: Device[] = [
@@ -88,6 +91,8 @@ const devices: Device[] = [
       "0 → 80% in ~30 min fast charge",
       "Type-C · draw-activated",
     ],
+    image: "/images/clio-platinum.png",
+    imageAlt: "Geek Bar Clio Platinum 50K disposable vape at Best Puff Tobacco",
   },
   {
     name: "Foger Bit 35000",
@@ -170,6 +175,12 @@ export default function Featured() {
                       </span>
                     )}
                   </div>
+
+                  {d.image && (
+                    <div className="mt-5 overflow-hidden rounded-xl border border-white/10">
+                      <ProductImage src={d.image} alt={d.imageAlt ?? d.name} />
+                    </div>
+                  )}
 
                   <h3 className="heading mt-5 text-2xl text-white">{d.name}</h3>
                   {d.tagline && (
