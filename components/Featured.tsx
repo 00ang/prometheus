@@ -91,7 +91,7 @@ const devices: Device[] = [
       "0 → 80% in ~30 min fast charge",
       "Type-C · draw-activated",
     ],
-    image: "/images/clio-platinum.png",
+    image: "/images/Clio-platinum.PNG",
     imageAlt: "Geek Bar Clio Platinum 50K disposable vape at Best Puff Tobacco",
   },
   {
