@@ -107,7 +107,7 @@ const devices: Device[] = [
       "Adjustable airflow · Type-C fast charge",
       "0 → 80% in ~20 minutes",
     ],
-    image: "/images/mate-60k.png",
+    image: "/images/mate-60k.JPG",
     imageAlt: "Geek Bar Mate 60K Kit disposable vape at Best Puff Tobacco",
   },
   {
